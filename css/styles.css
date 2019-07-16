@@ -1,0 +1,318 @@
+/* Everything */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+	font-size: 1.25em;
+	background: #FAF8F7;
+}
+
+.container {
+	width: 92%;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	text-align: center;
+	margin: -20px;
+	padding-top: 0px;
+	padding-bottom: 50px;
+
+}
+
+
+
+
+
+
+/* Header-specific */
+
+.name {
+	margin: 0;
+	padding: 15px;
+}
+
+.name a,
+.main-nav a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: #696969;
+}
+
+.name a:hover,
+.main-nav a:hover {
+	color: #CCBDB6;
+}
+
+.main-nav li {
+	margin: auto;
+	background-color: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+.profile {
+	display: block;
+	margin: 50px auto;
+	width: 65%;
+}
+
+.text {
+	text-align: center;
+	color: #808080;
+}
+
+
+
+
+
+
+/* Main-specific */
+
+main {
+	background-color: white;
+	padding-top: 50px;
+}
+
+.websites img {
+	display: block;
+	width: 95%;
+	margin: auto;
+}
+
+.websites p,
+.websites figcaption {
+	text-align: center;
+}
+
+.websites p {
+	font-weight: bold;
+	font-size: 0.8em;
+
+}
+
+figure:nth-child(-n + 5) {
+	padding-bottom: 30px;
+}
+
+figure p {
+	padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* Footer-specific */
+
+footer {
+	padding-top: 50px;
+}
+
+.phone {
+	margin-top: 30px;
+}
+
+.phone,
+.email {
+	display: block;
+	text-align: center;
+}
+
+.email {
+	margin-bottom: 60px;
+	margin-top: 15px;
+}
+
+
+.footer-info {
+	border-top: solid 1px gray;
+	padding: 30px 0px 0 0px;
+}
+
+.footer-name,
+.back-to-top {
+	display: inline;
+}
+
+
+.back-to-top {
+	float: right;
+}
+
+#contact a {
+	color: #2F4F4F;
+	text-decoration: none;
+}
+
+.footer-nav {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+	.main-nav li {
+		display: inline-block;
+		margin-right: -4px;
+		background-color: #FAF8F7;
+	}
+
+	.main-nav li:nth-child(-n + 2) {
+		border-right: 1px solid #ECD1C4;
+	}
+
+	.main-nav a {
+		padding: 10px 40px;
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.intro-content {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.intro-content .profile {
+		float: right;
+		width: 40%;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.intro-text {
+		float: left;
+		text-align: left;
+		width: 60%;
+		margin: 0;
+		padding: 20px 20px 20px 10px;
+	}
+
+
+	.websites {
+		display: inline-block;
+		width: 50%;
+		margin: 0 0 20px 0;
+		margin-right: -4px;
+		vertical-align: top;
+	} 
+
+	section {
+		margin-top: 10px;
+		margin-bottom: -20px;
+	}
+
+	.websites p {
+		padding-top: 5px;
+	}
+
+	.websites figcaption {
+		font-size: smaller;
+		width: 80%;
+		margin: auto;
+	}
+
+	.phone {
+		margin-top: 60px;
+	}
+
+	.footer-info {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+	.footer-nav,
+	.footer-nav li {
+		display: inline-block;
+	}
+
+	.footer-nav {
+		float: right;
+	}
+
+	.footer-nav li {
+		padding-right: 0;
+		margin-right: 0;
+		padding-left: 40px;
+		font-weight: bold;
+	}
+
+	.footer-nav a:hover {
+		color: #CCBDB6;
+	}
+
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+
+	.name, 
+	.main-nav {
+		display: inline-block;
+	}
+
+	.name {
+		margin-top: 30px;
+	}
+
+	.main-nav {
+		float: right;
+		padding: 15px;
+		margin-top: 30px;
+	}
+
+	.intro-text {
+		width: 60%;
+		max-width: 700px;
+	}
+
+
+	.websites {
+		display: inline-block;
+		width: 33.3%;
+	}
+
+	.intro-text {
+		font-size: 1.2em;
+	}
+
+
+}
