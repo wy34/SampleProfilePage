@@ -1,2 +1,2 @@
 # SampleProfilePage
-A Treehouse Techdegree project focused on Responsive Layout using HTML/CSS
+An introductory Treehouse Techdegree project focused on Responsive Layout using HTML/CSS
